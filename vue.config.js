@@ -9,6 +9,13 @@ module.exports = {
     chainWebpack: (config) => {
     },
     configureWebpack: (config) => {
+        config.resolve = {
+            extensions: ['.js','.json','.vue'],
+            alias: {
+                '@': path.resolve(__dirname,'./src'),
+                'public': path.resolve(__dirname,'./public')
+            }
+        }
         /* if (process.env.NODE_ENV === 'production') {
             // 为生产环境修改配置...
             config.mode = 'production'
