@@ -13,7 +13,7 @@
         </el-form-item>
         <el-form-item prop="pass" class="item-form">
           <label>密码</label>
-          <el-input type="password"  v-model="ruleForm.pass" placeholder="请输入密码" autocomplete="off" maxlength="20" minlength="6"></el-input>
+          <el-input type="password" v-model="ruleForm.pass" placeholder="请输入密码" autocomplete="off" maxlength="20" minlength="6"></el-input>
         </el-form-item>
         <el-form-item prop="pass2" class="item-form" v-show="model === 'register'">
           <label>重复密码</label>
